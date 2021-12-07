@@ -3,16 +3,16 @@ html {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.color1{
+.color1 {
     background-color: #001219;
 }
 
-.color{
+.color {
     color: #F2F4FF;
     margin: 2rem;
 }
 
-.section1{
+.section1 {
     background-color: #AE2012;
     border-radius: 2rem;
     margin: 1rem;
@@ -24,18 +24,18 @@ html {
 
 /*--pagina de inicio--*/
 
-.flex1{
+.flex1 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
-.imagen1{
+.imagen1 {
     border-radius: 2rem;
     border: ridge .3rem #EE9B00;
     width: 90%;
 }
 
-.flex2{
+.flex2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,24 +47,57 @@ h3, .subtitulo1 {
 
 /*--pagina algo-de-mi--*/
 
-.imagen2{
+.imagen2 {
     border-radius: 2rem;
     border: ridge .3rem #EE9B00;
 }
 
 /*--pagina punto-deporte*/
 
-.flex3{
+.flex3 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.colorlink{
+.colorlink {
     color: #001219;
 }
 
-/**/
+.flex4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boton1{
+    width: 50%;
+}
+
+.imagen3 {
+    border-radius: 2rem;
+    border: ridge .3rem #EE9B00;
+    width: 50%;
+}
+
+/*--pagina de multimedia--*/
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen4 {
+    border-radius: 2rem;
+    border: ridge .3rem #EE9B00;
+    width: 50%;
+}
+
+
+
+
+
+/*---------------------------------------------------------*/
 .redes{
     display: flex;
     flex-direction: row;
