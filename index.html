@@ -10,6 +10,8 @@
     <!--link de css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--link de animaciones tranciciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>includ</title>
 </head>
 
@@ -29,8 +31,7 @@
                 <div class=" collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item m-2">
-                            <a class="nav-link active text-black" aria-current="page"
-                                href="./index.html">inicio</a>
+                            <a class="nav-link active text-black" aria-current="page" href="./index.html">inicio</a>
                         </li>
                         <li class="nav-item m-2">
                             <a class="nav-link" href="./paginas/algo-de-mi.html">algo de mi</a>
@@ -59,41 +60,47 @@
         </div>
     </div>
 
-    <section class="section1">
-        <div class=" container- fluid row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/corredor.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Que somos</h3>
-                        <p class="card-text">Somos un sitio para toda aquella persona con alguna discapacidad motriz Que
-                            buscareanudar su vidadeportiva y no encuentra la forma de hacerlo.</p>
-                    </div>
-                </div>
+
+    <section>
+
+        <div class="flex1 section1">
+            <div>
+                <img class="imagen1" src="img/corredor.webp" alt="...">
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/seleccion.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Que buscamos</h3>
-                        <p class="card-text">Buscamos la unión de toda aquella persona con alguna discapacidad Y que
-                            tiene
-                            el deseo o ilusión de volver a su actividad fisica.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/lanzamiento.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Que ofrecemos</h3>
-                        <p class="card-text">Un sitio con la ubicación más detallada posible de cada uno de los puntos
-                            de
-                            recreación.</p>
-                    </div>
-                </div>
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="color">
+                <h3>Que somos</h3>
+                <p>Somos un sitio para toda aquella persona con alguna discapacidad motriz Que
+                    busca reanudar su vida deportiva y no encuentra la forma de hacerlo.</p>
             </div>
         </div>
+
+        <div class="flex2 section1">
+            <div>
+                <img class="imagen1" src="img/seleccion.jpg" alt="...">
+            </div>
+            <div data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="color">
+                <h3>Que buscamos</h3>
+                <p>Buscamos la unión de toda aquella persona con alguna discapacidad Y que
+                    tiene el deseo o ilusión de volver a su actividad fisica.</p>
+            </div>
+        </div>
+
+        <div class="flex1 section1">
+            <div>
+                <img class="imagen1" src="img/lanzamiento.webp" alt="...">
+            </div>
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="color">
+                <h3>Que ofrecemos</h3>
+                <p>Un sitio con la ubicación más detallada posible de cada uno de los puntos derecreación.</p>
+            </div>
+        </div>
+
     </section>
 
     <div class="color2">
@@ -122,6 +129,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--link de animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -4,21 +4,67 @@ html {
 }
 
 .color1{
-    background-color: #03071E;
+    background-color: #001219;
 }
 
 .color{
-    color: #E6F8B2;
+    color: #F2F4FF;
     margin: 2rem;
 }
 
 .section1{
-    background-color: #D00000;
+    background-color: #AE2012;
     border-radius: 2rem;
     margin: 1rem;
     padding: 2rem;
 }
 
+
+/*-------------*/
+
+/*--pagina de inicio--*/
+
+.flex1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.imagen1{
+    border-radius: 2rem;
+    border: ridge .3rem #EE9B00;
+    width: 90%;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h3, .subtitulo1 {
+    text-decoration: overline #0A9396;
+}
+
+/*--pagina algo-de-mi--*/
+
+.imagen2{
+    border-radius: 2rem;
+    border: ridge .3rem #EE9B00;
+}
+
+/*--pagina punto-deporte*/
+
+.flex3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorlink{
+    color: #001219;
+}
+
+/**/
 .redes{
     display: flex;
     flex-direction: row;
