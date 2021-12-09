@@ -2,102 +2,160 @@
 html {
     font-family: 'Josefin Sans', sans-serif;
 }
-
 .color1 {
     background-color: #001219;
 }
-
 .color {
     color: #F2F4FF;
-    margin: 2rem;
+    margin: 1rem;
 }
-
 .section1 {
     background-color: #AE2012;
     border-radius: 2rem;
     margin: 1rem;
     padding: 2rem;
 }
+/*=====hasta aqui aplique formatos de letras color background margin padding=====*/
 
+/*=cabe destacar que en cada pagina realice grillas con sus respectivas modificaciones que luego se repetiran en otras paginas= =esta me parecio la forma mas facil de ahorrar codigo=*/
 
-/*-------------*/
+/*=====pagina de inicio=====*/
 
-/*--pagina de inicio--*/
-
-.flex1 {
+.grilla2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
-.imagen1 {
+.grilla2 img{
     border-radius: 2rem;
-    border: ridge .3rem #EE9B00;
-    width: 90%;
+    border: outset .3rem #E28413;
+    width: 90vh;
+}
+.grilla2 h3 {
+    text-decoration: overline #8ECAE6;
 }
 
-.flex2 {
+
+
+.grilla2-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-h3, .subtitulo1 {
-    text-decoration: overline #0A9396;
-}
-
-/*--pagina algo-de-mi--*/
-
-.imagen2 {
+.grilla2-row img{
     border-radius: 2rem;
-    border: ridge .3rem #EE9B00;
+    border: outset .3rem #E28413;
+    width: 90vh;
+}
+.grilla2-row h3 {
+    text-decoration: overline #8ECAE6;
 }
 
-/*--pagina punto-deporte*/
 
-.flex3 {
+/*=====pagina algo de mi====*/
+
+.grilla2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.grilla2-1 img {
+    border-radius: 2rem;
+    border: outset .3rem #E28413;
+    width: 80vh;
+}
+.grilla2-1 h3 {
+    text-decoration: overline #8ECAE6;
+}
+
+
+
+.grilla2-1-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.grilla2-1-row img {
+    border-radius: 2rem;
+    border: outset .3rem #E28413;
+    width: 45vh;
+}
+.grilla2-1-row h3 {
+    text-decoration: overline #8ECAE6;
+}
+
+/*=====pagina punto deporte=====*/
+
+.grilla1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.grilla1 div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.colorlink {
-    color: #001219;
+.grilla1 img {
+    border-radius: 2rem;
+    border: outset .3rem #E28413;
+}
+.grilla1 h3 {
+    text-decoration: overline #8ECAE6;
 }
 
-.flex4 {
+
+
+.grilla1-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.grilla1-2 div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
-
-.boton1{
-    width: 50%;
-}
-
-.imagen3 {
+.grilla1-2 img {
     border-radius: 2rem;
-    border: ridge .3rem #EE9B00;
-    width: 50%;
+    border: outset .3rem #E28413;
+    width: 70vh;
+}
+.grilla1-2 h3 {
+    text-decoration: overline #8ECAE6;
 }
 
-/*--pagina de multimedia--*/
 
-.div1 {
+/*=====pagina multimedia=====*/
+
+.grilla1-3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.grilla1-3 div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
-
-.imagen4 {
+.grilla1-3 img {
     border-radius: 2rem;
-    border: ridge .3rem #EE9B00;
-    width: 50%;
+    border: outset .3rem #E28413;
+    width: 125vh;
+}
+.grilla1-3 h3 {
+    text-decoration: overline #8ECAE6;
 }
 
-
-
-
-
-/*---------------------------------------------------------*/
+/*=====footer incluido en todas las paginas=====*/
 .redes{
     display: flex;
     flex-direction: row;
@@ -116,3 +174,5 @@ form{
     object-fit: cover;
     object-position: center;
 }
+
+/*=====media queries=====*/
