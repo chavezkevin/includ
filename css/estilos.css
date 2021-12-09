@@ -68,7 +68,7 @@ html {
 .grilla2-1 img {
     border-radius: 2rem;
     border: outset .3rem #E28413;
-    width: 80vh;
+    padding: 0%;
 }
 .grilla2-1 h3 {
     text-decoration: overline #8ECAE6;
@@ -87,6 +87,7 @@ html {
     border-radius: 2rem;
     border: outset .3rem #E28413;
     width: 45vh;
+    padding: 0%;
 }
 .grilla2-1-row h3 {
     text-decoration: overline #8ECAE6;
@@ -176,3 +177,46 @@ form{
 }
 
 /*=====media queries=====*/
+/*=destaco que usare varias clases ya asignadas pero cambiare su configuracion=*/
+
+@media screen and (max-width: 782px) {
+    
+    /*===pagina de inicio===*/
+    .grilla2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grilla2-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*===pagina algo de mi===*/
+    .grilla2-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .grilla2-1-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*===pagina multimedia===*/
+    .grilla1 h3{
+        text-decoration: none;
+    }
+    .grilla1-3 h3{
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 511px) {
+
+    /*===pagina algo de mi===*/
+    .grilla2-1 img{
+        width: 40vh;
+    }
+}
