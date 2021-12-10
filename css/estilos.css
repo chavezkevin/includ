@@ -237,6 +237,9 @@ img:hover {
     .grilla1 h3{
         text-decoration: none;
     }
+    h3 .subrayado{
+        text-decoration: overline #8ECAE6;
+    }
     .grilla1-3 h3{
         text-decoration: none;
     }
@@ -246,6 +249,20 @@ img:hover {
 
     /*===pagina algo de mi===*/
     .grilla2-1 img{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    
+    /*===pagina punto deporte===*/
+    .grilla1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+    .grilla1 img {
         width: 40vh;
     }
 }
