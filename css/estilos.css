@@ -15,7 +15,12 @@ html {
     margin: 1rem;
     padding: 2rem;
 }
-/*=====hasta aqui aplique formatos de letras color background margin padding=====*/
+h3 {
+    animation-name: decender;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+/*=====hasta aqui aplique formatos de letras color background margin padding y trancisiones=====*/
 
 /*=cabe destacar que en cada pagina realice grillas con sus respectivas modificaciones que luego se repetiran en otras paginas= =esta me parecio la forma mas facil de ahorrar codigo=*/
 
@@ -174,6 +179,30 @@ form{
     width: 60%;
     object-fit: cover;
     object-position: center;
+}
+
+/*=====animaciones trancisiones=====*/
+
+img {
+    transition: all 2s;
+}
+
+img:hover {
+    transform: scale(.9);
+}
+
+@keyframes decender {
+    
+    0%{
+        transform: translate (4rem);
+    }
+    50%{
+        transform: translate(2rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+
 }
 
 /*=====media queries=====*/
