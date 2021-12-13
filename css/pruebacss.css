@@ -1,0 +1,75 @@
+/*===pagina punto deporte===*/
+html {
+  font-family: 'Josefin Sans', sans-serif; }
+
+.color1 {
+  background-color: #001219; }
+
+.color {
+  color: #F2F4FF;
+  margin: 1rem; }
+
+.section1 {
+  background-color: #AE2012;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 2rem; }
+
+.grilla1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center; }
+  .grilla1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla1 div img {
+      border-radius: 2rem;
+      border: outset .3rem #E28413; }
+      .grilla1 div img:hover {
+        transform: scale(0.9);
+        transition: all 2s;
+        transform: scale(0.9); }
+    .grilla1 div h3 {
+      text-decoration: overline #8ECAE6;
+      animation-name: decender;
+      animation-duration: 2s;
+      animation-delay: .5s; }
+
+.grilla1-2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center; }
+  .grilla1-2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla1-2 div img {
+      border-radius: 2rem;
+      border: outset .3rem #E28413;
+      width: 70vh; }
+      .grilla1-2 div img hover {
+        transform: scale(0.9); }
+    .grilla1-2 div h3 {
+      text-decoration: overline #8ECAE6;
+      animation-name: decender;
+      animation-duration: 2s;
+      animation-delay: .5s; }
+
+@keyframes decender {
+  0% {
+    transform: translate 4rem; }
+  50% {
+    transform: translate(2rem); }
+  100% {
+    transform: translate(0); } }
+
+@media screen and (max-width: 397px) {
+  /*===pagina punto deporte===*/
+  .grilla1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    justify-content: center; }
+    .grilla1 img {
+      width: 40vh; } }
