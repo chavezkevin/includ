@@ -1,0 +1,27 @@
+@keyframes decender {
+    
+    0%{
+        transform: translate (4rem);
+    }
+    50%{
+        transform: translate(2rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+img {
+    transition: all 2s;
+}
+
+img:hover {
+    transform: scale(.9);
+}
+
+
+h3 {
+    animation-name: decender;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}

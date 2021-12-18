@@ -1,0 +1,28 @@
+.grilla1-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border-radius: 2rem;
+            border: outset .3rem #E28413;
+            width: 70vh;
+
+            & hover {
+                transform: scale(.9);
+            }
+        }
+
+        h3 {
+            text-decoration: overline #8ECAE6;
+            animation-name: decender;
+            animation-duration: 2s;
+            animation-delay: .5s;
+        }
+    }
+}

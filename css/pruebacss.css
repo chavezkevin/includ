@@ -1,13 +1,15 @@
-/*===pagina punto deporte===*/
-html {
-  font-family: 'Josefin Sans', sans-serif; }
-
 .color1 {
   background-color: #001219; }
 
 .color {
   color: #F2F4FF;
   margin: 1rem; }
+
+.section1 {
+  background-color: #AE2012;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 2rem; }
 
 .section1 {
   background-color: #AE2012;
@@ -23,14 +25,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .grilla1 div img {
-      border-radius: 2rem;
-      border: outset .3rem #E28413; }
-      .grilla1 div img:hover {
-        transform: scale(0.9);
-        transition: all 2s;
-        transform: scale(0.9); }
-    .grilla1 div h3 {
+  .grilla1 img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413; }
+    .grilla1 img:hover {
+      transform: scale(0.9);
+      transition: all 2s;
+      transform: scale(0.9); }
+    .grilla1 img h3 {
       text-decoration: overline #8ECAE6;
       animation-name: decender;
       animation-duration: 2s;
@@ -56,6 +58,85 @@ html {
       animation-duration: 2s;
       animation-delay: .5s; }
 
+.grilla2-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .grilla2-row img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413;
+    width: 90vh; }
+  .grilla2-row h3 {
+    text-decoration: overline #8ECAE6; }
+
+.grilla2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .grilla2 img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413;
+    width: 90vh; }
+  .grilla2 h3 {
+    text-decoration: overline #8ECAE6; }
+
+.grilla2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .grilla2-1 img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413;
+    padding: 0%; }
+  .grilla2-1 h3 {
+    text-decoration: overline #8ECAE6; }
+
+.grilla2-1-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .grilla2-1-row img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413;
+    width: 45vh;
+    padding: 0%; }
+  .grilla2-1-row h3 {
+    text-decoration: overline #8ECAE6; }
+
+.grilla1-3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center; }
+  .grilla1-3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grilla1-3 img {
+    border-radius: 2rem;
+    border: outset 0.3rem #E28413;
+    width: 125vh; }
+  .grilla1-3 h3 {
+    text-decoration: overline #8ECAE6; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem; }
+
 @keyframes decender {
   0% {
     transform: translate 4rem; }
@@ -63,6 +144,57 @@ html {
     transform: translate(2rem); }
   100% {
     transform: translate(0); } }
+
+img {
+  transition: all 2s; }
+
+img:hover {
+  transform: scale(0.9); }
+
+h3 {
+  animation-name: decender;
+  animation-duration: 2s;
+  animation-delay: .5s; }
+
+@media screen and (max-width: 397px) {
+  /*===pagina punto deporte===*/
+  .grilla1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    justify-content: center; }
+    .grilla1 img {
+      width: 40vh; } }
+
+@media screen and (max-width: 782px) {
+  /*===pagina de inicio===*/
+  .grilla2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grilla2-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /*===pagina algo de mi===*/
+  .grilla2-1 {
+    display: flex;
+    flex-direction: column; }
+  .grilla2-1-row {
+    display: flex;
+    flex-direction: column; }
+  /*===pagina multimedia===*/
+  .grilla1 h3 {
+    text-decoration: none; }
+  h3 .subrayado {
+    text-decoration: overline #8ECAE6; }
+  .grilla1-3 h3 {
+    text-decoration: none; } }
+
+@media screen and (max-width: 511px) {
+  /*===pagina algo de mi===*/
+  .grilla2-1 img {
+    width: 40vh; } }
 
 @media screen and (max-width: 397px) {
   /*===pagina punto deporte===*/

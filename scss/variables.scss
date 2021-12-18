@@ -1,3 +1,20 @@
 $color-body: #001219;
 $color-letras: #F2F4FF;
 $color-section: #AE2012;
+$color-bordes: #E28413;
+$color-decorado: #8ECAE6;
+
+.color1 {
+    background-color: $color-body;
+}
+.color {
+    color: $color-letras;
+    margin: 1rem;
+}
+
+.section1 {
+    background-color: $color-section;
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+}

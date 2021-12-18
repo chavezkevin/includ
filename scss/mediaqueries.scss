@@ -12,3 +12,71 @@
         }
     }
 }
+
+@media screen and (max-width: 782px) {
+    
+    /*===pagina de inicio===*/
+    .grilla2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grilla2-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*===pagina algo de mi===*/
+    .grilla2-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .grilla2-1-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*===pagina multimedia===*/
+    .grilla1 {
+        h3{
+            text-decoration: none;
+        }
+    }
+    h3 {
+        .subrayado{
+            text-decoration: overline $color-decorado;
+        }
+    }
+
+    .grilla1-3 {
+
+        h3{
+            text-decoration: none;
+
+        }
+    }
+}
+
+@media screen and (max-width: 511px) {
+
+    /*===pagina algo de mi===*/
+    .grilla2-1 img{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    
+    /*===pagina punto deporte===*/
+    .grilla1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        justify-content: center;
+        img {
+            width: 40vh;
+        }
+    }
+}

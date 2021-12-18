@@ -1,0 +1,15 @@
+.grilla2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    img {
+        border-radius: 2rem;
+        border: outset .3rem $color-bordes;
+        padding: 0%;
+    }
+    h3 {
+        text-decoration: overline $color-decorado;
+    }
+}

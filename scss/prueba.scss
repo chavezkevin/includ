@@ -1,96 +1,13 @@
-/*===pagina punto deporte===*/
-
 @import "variables";
-
-html {
-    font-family: 'Josefin Sans', sans-serif;
-}
-.color1 {
-    background-color: $color-body;
-}
-.color {
-    color: $color-letras;
-    margin: 1rem;
-}
-.section1 {
-    background-color: $color-section;
-    border-radius: 2rem;
-    margin: 1rem;
-    padding: 2rem;
-}
-
-.grilla1 {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            border-radius: 2rem;
-            border: outset .3rem #E28413;
-
-            &:hover {
-                transform: scale(.9);
-                transition: all 2s;
-                transform: scale(.9);
-            }
-        }
-
-        h3 {
-            text-decoration: overline #8ECAE6;
-            animation-name: decender;
-            animation-duration: 2s;
-            animation-delay: .5s;
-        }
-    }
-}
-
-.grilla1-2 {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            border-radius: 2rem;
-            border: outset .3rem #E28413;
-            width: 70vh;
-
-            & hover {
-                transform: scale(.9);
-            }
-        }
-
-        h3 {
-            text-decoration: overline #8ECAE6;
-            animation-name: decender;
-            animation-duration: 2s;
-            animation-delay: .5s;
-        }
-    }
-}
-
-@keyframes decender {
-    
-    0%{
-        transform: translate (4rem);
-    }
-    50%{
-        transform: translate(2rem);
-    }
-    100%{
-        transform: translate(0);
-    }
-
-}
-
-@import "mediaqueries"
-
+@import "section";
+@import "grilla1";
+@import "grilla12";
+@import "grilla2row";
+@import "grilla2";
+@import "grilla21";
+@import "grilla21row";
+@import "grilla13";
+@import "form";
+@import "footer";
+@import "animaciones";
+@import "mediaqueries";
