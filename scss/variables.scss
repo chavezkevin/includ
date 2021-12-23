@@ -12,9 +12,18 @@ $color-decorado: #8ECAE6;
     margin: 1rem;
 }
 
-.section1 {
-    background-color: $color-section;
+@mixin size {
     border-radius: 2rem;
-    margin: 1rem;
-    padding: 2rem;
+    border: outset .3rem $color-bordes;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,600&display=swap');
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    animation-name: decender;
+    animation-duration: 2s;
+    animation-delay: .5s;
 }

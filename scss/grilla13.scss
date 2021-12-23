@@ -1,5 +1,5 @@
 .grilla1-3 {
-    display: grid;
+    @extend .grilla1;
     grid-template-rows: 1fr;
     justify-items: center;
     div {
@@ -8,11 +8,11 @@
         align-items: center;
     }
     img {
-        border-radius: 2rem;
-        border: outset .3rem $color-bordes;
+        @include size;
         width: 125vh;
     }
     h3 {
         text-decoration: overline $color-decorado;
     }
 }
+

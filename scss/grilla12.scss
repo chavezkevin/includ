@@ -1,5 +1,5 @@
 .grilla1-2 {
-    display: grid;
+    @extend .grilla1;
     grid-template-rows: 1fr;
     justify-items: center;
 
@@ -9,8 +9,7 @@
         align-items: center;
 
         img {
-            border-radius: 2rem;
-            border: outset .3rem #E28413;
+            @include size;
             width: 70vh;
 
             & hover {
@@ -19,7 +18,7 @@
         }
 
         h3 {
-            text-decoration: overline #8ECAE6;
+            text-decoration: overline $color-decorado;
             animation-name: decender;
             animation-duration: 2s;
             animation-delay: .5s;

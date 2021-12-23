@@ -1,12 +1,11 @@
 .grilla2 {
-    display: grid;
+    @extend .grilla1;
     grid-template-columns: 2fr 1fr;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     img{
-        border-radius: 2rem;
-        border: outset .3rem $color-bordes;
+        @include size;
         width: 90vh;
     }
     h3 {

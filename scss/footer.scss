@@ -2,5 +2,15 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem;
+}
+
+$redes: (
+    facebook: margin 2rem,
+    instagram: margin 2rem,
+);
+
+@each $red, $margen in $redes {
+    .red-#{$red} {
+        margin: $margen;
+    }
 }

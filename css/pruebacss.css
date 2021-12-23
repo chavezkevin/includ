@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,600&display=swap");
 .color1 {
   background-color: #001219; }
 
@@ -5,11 +6,13 @@
   color: #F2F4FF;
   margin: 1rem; }
 
-.section1 {
-  background-color: #AE2012;
-  border-radius: 2rem;
-  margin: 1rem;
-  padding: 2rem; }
+html {
+  font-family: 'Josefin Sans', sans-serif; }
+
+h3 {
+  animation-name: decender;
+  animation-duration: 2s;
+  animation-delay: .5s; }
 
 .section1 {
   background-color: #AE2012;
@@ -17,29 +20,28 @@
   margin: 1rem;
   padding: 2rem; }
 
-.grilla1 {
+.grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center; }
-  .grilla1 div {
+  .grilla1 div, .grilla1-2 div, .grilla2-row div, .grilla2 div, .grilla2-1 div, .grilla2-1-row div, .grilla1-3 div {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .grilla1 img {
+  .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
     border-radius: 2rem;
     border: outset 0.3rem #E28413; }
-    .grilla1 img:hover {
+    .grilla1 img:hover, .grilla1-2 img:hover, .grilla2-row img:hover, .grilla2 img:hover, .grilla2-1 img:hover, .grilla2-1-row img:hover, .grilla1-3 img:hover {
       transform: scale(0.9);
       transition: all 2s;
       transform: scale(0.9); }
-    .grilla1 img h3 {
+    .grilla1 img h3, .grilla1-2 img h3, .grilla2-row img h3, .grilla2 img h3, .grilla2-1 img h3, .grilla2-1-row img h3, .grilla1-3 img h3 {
       text-decoration: overline #8ECAE6;
       animation-name: decender;
       animation-duration: 2s;
       animation-delay: .5s; }
 
 .grilla1-2 {
-  display: grid;
   grid-template-rows: 1fr;
   justify-items: center; }
   .grilla1-2 div {
@@ -48,7 +50,7 @@
     align-items: center; }
     .grilla1-2 div img {
       border-radius: 2rem;
-      border: outset .3rem #E28413;
+      border: outset 0.3rem #E28413;
       width: 70vh; }
       .grilla1-2 div img hover {
         transform: scale(0.9); }
@@ -59,7 +61,6 @@
       animation-delay: .5s; }
 
 .grilla2-row {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   display: flex;
   flex-direction: row;
@@ -72,7 +73,6 @@
     text-decoration: overline #8ECAE6; }
 
 .grilla2 {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   display: flex;
   flex-direction: row-reverse;
@@ -85,7 +85,6 @@
     text-decoration: overline #8ECAE6; }
 
 .grilla2-1 {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   display: flex;
   flex-direction: row-reverse;
@@ -98,7 +97,6 @@
     text-decoration: overline #8ECAE6; }
 
 .grilla2-1-row {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   display: flex;
   flex-direction: row;
@@ -112,7 +110,6 @@
     text-decoration: overline #8ECAE6; }
 
 .grilla1-3 {
-  display: grid;
   grid-template-rows: 1fr;
   justify-items: center; }
   .grilla1-3 div {
@@ -134,8 +131,13 @@ form {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 2rem; }
+  justify-content: space-around; }
+
+.red-facebook {
+  margin: margin 2rem; }
+
+.red-instagram {
+  margin: margin 2rem; }
 
 @keyframes decender {
   0% {
@@ -158,12 +160,12 @@ h3 {
 
 @media screen and (max-width: 397px) {
   /*===pagina punto deporte===*/
-  .grilla1 {
+  .grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
     justify-content: center; }
-    .grilla1 img {
+    .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
       width: 40vh; } }
 
 @media screen and (max-width: 782px) {
@@ -184,7 +186,7 @@ h3 {
     display: flex;
     flex-direction: column; }
   /*===pagina multimedia===*/
-  .grilla1 h3 {
+  .grilla1 h3, .grilla1-2 h3, .grilla2-row h3, .grilla2 h3, .grilla2-1 h3, .grilla2-1-row h3, .grilla1-3 h3 {
     text-decoration: none; }
   h3 .subrayado {
     text-decoration: overline #8ECAE6; }
@@ -198,10 +200,10 @@ h3 {
 
 @media screen and (max-width: 397px) {
   /*===pagina punto deporte===*/
-  .grilla1 {
+  .grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
     justify-content: center; }
-    .grilla1 img {
+    .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
       width: 40vh; } }

@@ -1,31 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,600&display=swap');
-html {
-    font-family: 'Josefin Sans', sans-serif;
-}
 
-h3 {
-    animation-name: decender;
-    animation-duration: 2s;
-    animation-delay: .5s;
-}
 
-/*=====pagina multimedia=====*/
 
-.grilla1-3 {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}
-.grilla1-3 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.grilla1-3 img {
-    border-radius: 2rem;
-    border: outset .3rem #E28413;
-    width: 125vh;
-}
-.grilla1-3 h3 {
-    text-decoration: overline #8ECAE6;
-}
