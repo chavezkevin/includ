@@ -1,0 +1,32 @@
+$redes: (
+        instagram: rgb(207, 7, 124),
+        facebook:  rgb(0, 75, 150),
+); 
+@each $red, $margen in $redes {
+    .redes-#{$red} {
+        margin: 2rem;
+    }
+}
+
+footer {
+    @extend .grilla2;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+
+        a {
+            margin: 2rem;
+        }
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 5rem;
+    }
+}

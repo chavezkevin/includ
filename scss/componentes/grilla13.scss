@@ -1,0 +1,15 @@
+.grilla13{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    div {
+        margin: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 80vh;
+    }
+}

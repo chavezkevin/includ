@@ -1,0 +1,10 @@
+.grilla1 {
+    @extend .grilla2;
+    flex-direction: row;
+    a {
+        color: $color-body;
+    }
+    img {
+        width: 80rem;
+    }
+}

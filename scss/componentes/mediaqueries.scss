@@ -1,0 +1,193 @@
+@media (max-width: 992px) {
+    .grilla13{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grilla3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+    .section2 {
+        background-color: $color-section;
+        border-radius: 2rem;
+        margin: 1rem;
+        padding: 2rem;
+
+        img {
+            width: 40rem;
+        }
+    }
+
+    .grilla1-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 40rem;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+
+    .grilla2-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .grilla1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .grilla2 {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 20rem;
+        }
+
+        .imagenyo {
+
+            img {
+                width: 15rem;
+            }
+        }
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            width: 5rem;
+            margin: 1rem;
+        }
+    }
+
+    .section2 {
+        
+        img {
+            width: 30rem;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+
+    .section2{
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    .color2 {
+
+        img {
+            width: 20rem;
+        }
+    }
+
+
+        .yoJugando {
+            width: 20rem;
+        }
+
+}
+
+@media (max-width: 528px) {
+
+    footer {
+
+        .perfil {
+            margin: 0;
+        }
+    }
+
+    .grilla2-1 {
+        
+        img {
+            width: 15rem;
+        }
+    }
+
+    form {
+
+        div {
+            width: 10rem;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+
+    .grilla13 {
+        
+        img {
+            width: 15rem;
+        }
+    }
+
+    .grilla {
+
+        img {
+            width: 15rem;
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .redes {
+            display: flex;
+            align-items: center;
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+                a {
+                    margin: 0;
+                }
+            }
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .yoJugando {
+        width: 15rem;
+    }
+
+    .color2{
+
+        img {
+            width: 15rem;
+        }
+    }
+}

@@ -9,135 +9,23 @@
 html {
   font-family: 'Josefin Sans', sans-serif; }
 
-h3 {
+.subtitulo-animado {
   animation-name: decender;
   animation-duration: 2s;
   animation-delay: .5s; }
+
+.imagen-borde {
+  border-radius: 2rem;
+  border: solid #E28413; }
+
+.unica-imagen {
+  width: 80rem; }
 
 .section1 {
   background-color: #AE2012;
   border-radius: 2rem;
   margin: 1rem;
   padding: 2rem; }
-
-.grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-items: center; }
-  .grilla1 div, .grilla1-2 div, .grilla2-row div, .grilla2 div, .grilla2-1 div, .grilla2-1-row div, .grilla1-3 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413; }
-    .grilla1 img:hover, .grilla1-2 img:hover, .grilla2-row img:hover, .grilla2 img:hover, .grilla2-1 img:hover, .grilla2-1-row img:hover, .grilla1-3 img:hover {
-      transform: scale(0.9);
-      transition: all 2s;
-      transform: scale(0.9); }
-    .grilla1 img h3, .grilla1-2 img h3, .grilla2-row img h3, .grilla2 img h3, .grilla2-1 img h3, .grilla2-1-row img h3, .grilla1-3 img h3 {
-      text-decoration: overline #8ECAE6;
-      animation-name: decender;
-      animation-duration: 2s;
-      animation-delay: .5s; }
-
-.grilla1-2 {
-  grid-template-rows: 1fr;
-  justify-items: center; }
-  .grilla1-2 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .grilla1-2 div img {
-      border-radius: 2rem;
-      border: outset 0.3rem #E28413;
-      width: 70vh; }
-      .grilla1-2 div img hover {
-        transform: scale(0.9); }
-    .grilla1-2 div h3 {
-      text-decoration: overline #8ECAE6;
-      animation-name: decender;
-      animation-duration: 2s;
-      animation-delay: .5s; }
-
-.grilla2-row {
-  grid-template-columns: 2fr 1fr;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-  .grilla2-row img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413;
-    width: 90vh; }
-  .grilla2-row h3 {
-    text-decoration: overline #8ECAE6; }
-
-.grilla2 {
-  grid-template-columns: 2fr 1fr;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; }
-  .grilla2 img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413;
-    width: 90vh; }
-  .grilla2 h3 {
-    text-decoration: overline #8ECAE6; }
-
-.grilla2-1 {
-  grid-template-columns: 2fr 1fr;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; }
-  .grilla2-1 img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413;
-    padding: 0%; }
-  .grilla2-1 h3 {
-    text-decoration: overline #8ECAE6; }
-
-.grilla2-1-row {
-  grid-template-columns: 2fr 1fr;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-  .grilla2-1-row img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413;
-    width: 45vh;
-    padding: 0%; }
-  .grilla2-1-row h3 {
-    text-decoration: overline #8ECAE6; }
-
-.grilla1-3 {
-  grid-template-rows: 1fr;
-  justify-items: center; }
-  .grilla1-3 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .grilla1-3 img {
-    border-radius: 2rem;
-    border: outset 0.3rem #E28413;
-    width: 125vh; }
-  .grilla1-3 h3 {
-    text-decoration: overline #8ECAE6; }
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.red-facebook {
-  margin: margin 2rem; }
-
-.red-instagram {
-  margin: margin 2rem; }
 
 @keyframes decender {
   0% {
@@ -158,52 +46,180 @@ h3 {
   animation-duration: 2s;
   animation-delay: .5s; }
 
-@media screen and (max-width: 397px) {
-  /*===pagina punto deporte===*/
-  .grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    justify-content: center; }
-    .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
-      width: 40vh; } }
+.grilla2, .grilla2-row, footer, .grilla2-1, .grilla1-2, .grilla1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .grilla2 h3, .grilla2-row h3, footer h3, .grilla2-1 h3, .grilla1-2 h3, .grilla1 h3 {
+    text-decoration: overline #8ECAE6; }
+  .grilla2 .imagenyo img, .grilla2-row .imagenyo img, footer .imagenyo img, .grilla2-1 .imagenyo img, .grilla1-2 .imagenyo img, .grilla1 .imagenyo img {
+    width: 90%; }
 
-@media screen and (max-width: 782px) {
-  /*===pagina de inicio===*/
-  .grilla2 {
+.grilla2-row {
+  flex-direction: row; }
+
+.redes-instagram {
+  margin: 2rem; }
+
+.redes-facebook {
+  margin: 2rem; }
+
+footer {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between; }
+  footer .redes {
+    display: flex;
+    flex-direction: column; }
+    footer .redes a {
+      margin: 2rem; }
+  footer .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5rem; }
+
+.grilla2-1 {
+  flex-direction: row; }
+
+.grilla1-2 a {
+  color: #001219; }
+
+.grilla1 {
+  flex-direction: row; }
+  .grilla1 a {
+    color: #001219; }
+  .grilla1 img {
+    width: 80rem; }
+
+.grilla13 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline; }
+  .grilla13 div {
+    margin: 0.5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .grilla2-row {
+  .grilla13 img {
+    width: 80vh; }
+
+.grilla3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .grilla3 div {
+    margin: 1rem; }
+  .grilla3 img {
+    width: 100%; }
+
+.grilla {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem; }
+  form div {
+    width: 20rem; }
+
+article {
+  margin: 1rem; }
+
+@media (max-width: 992px) {
+  .grilla13 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  /*===pagina algo de mi===*/
+  .grilla3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section2 {
+    background-color: #AE2012;
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 2rem; }
+    .section2 img {
+      width: 40rem; }
+  .grilla1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla1-2 img {
+      width: 40rem; } }
+
+@media (max-width: 834px) {
   .grilla2-1 {
     display: flex;
-    flex-direction: column; }
-  .grilla2-1-row {
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  .grilla1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 690px) {
+  .grilla2, .grilla2-row, footer, .grilla2-1, .grilla1-2, .grilla1 {
     display: flex;
     flex-direction: column; }
-  /*===pagina multimedia===*/
-  .grilla1 h3, .grilla1-2 h3, .grilla2-row h3, .grilla2 h3, .grilla2-1 h3, .grilla2-1-row h3, .grilla1-3 h3 {
-    text-decoration: none; }
-  h3 .subrayado {
-    text-decoration: overline #8ECAE6; }
-  .grilla1-3 h3 {
-    text-decoration: none; } }
+    .grilla2 img, .grilla2-row img, footer img, .grilla2-1 img, .grilla1-2 img, .grilla1 img {
+      width: 20rem; }
+    .grilla2 .imagenyo img, .grilla2-row .imagenyo img, footer .imagenyo img, .grilla2-1 .imagenyo img, .grilla1-2 .imagenyo img, .grilla1 .imagenyo img {
+      width: 15rem; }
+  footer {
+    display: flex;
+    flex-direction: row; }
+    footer img {
+      width: 5rem;
+      margin: 1rem; }
+  .section2 img {
+    width: 30rem; } }
 
-@media screen and (max-width: 511px) {
-  /*===pagina algo de mi===*/
+@media (max-width: 528px) {
+  .section2 img {
+    width: 20rem; }
+  .color2 img {
+    width: 20rem; }
+  .yoJugando {
+    width: 20rem; } }
+
+@media (max-width: 528px) {
+  footer .perfil {
+    margin: 0; }
   .grilla2-1 img {
-    width: 40vh; } }
+    width: 15rem; }
+  form div {
+    width: 10rem; } }
 
-@media screen and (max-width: 397px) {
-  /*===pagina punto deporte===*/
-  .grilla1, .grilla1-2, .grilla2-row, .grilla2, .grilla2-1, .grilla2-1-row, .grilla1-3 {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    justify-content: center; }
-    .grilla1 img, .grilla1-2 img, .grilla2-row img, .grilla2 img, .grilla2-1 img, .grilla2-1-row img, .grilla1-3 img {
-      width: 40vh; } }
+@media (max-width: 375px) {
+  .grilla13 img {
+    width: 15rem; }
+  .grilla img {
+    width: 15rem; } }
+
+@media (max-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .redes {
+      display: flex;
+      align-items: center; }
+      footer .redes div {
+        display: flex;
+        flex-direction: row; }
+        footer .redes div a {
+          margin: 0; }
+    footer .perfil {
+      display: flex;
+      align-items: center; }
+  .yoJugando {
+    width: 15rem; }
+  .color2 img {
+    width: 15rem; } }

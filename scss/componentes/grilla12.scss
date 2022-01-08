@@ -1,0 +1,7 @@
+.grilla1-2 {
+    @extend .grilla2;
+
+    a {
+        color: $color-body;
+    }
+}
