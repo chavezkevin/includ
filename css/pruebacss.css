@@ -174,10 +174,18 @@ article {
       width: 15rem; }
   footer {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column;
+    align-items: center; }
     footer img {
-      width: 5rem;
-      margin: 1rem; }
+      width: 3rem; }
+    footer .redes {
+      display: flex;
+      align-items: center; }
+      footer .redes div {
+        display: flex;
+        flex-direction: row; }
+        footer .redes div a {
+          margin: 0; }
   .section2 img {
     width: 30rem; } }
 
@@ -189,13 +197,24 @@ article {
   .yoJugando {
     width: 20rem; } }
 
-@media (max-width: 528px) {
-  footer .perfil {
-    margin: 0; }
-  .grilla2-1 img {
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer img {
+    width: 3rem; }
+  footer .redes {
+    display: flex;
+    align-items: center; }
+    footer .redes div {
+      display: flex;
+      flex-direction: row; }
+      footer .redes div a {
+        margin: 0; }
+  footer .grilla2-1 img {
     width: 15rem; }
-  form div {
-    width: 10rem; } }
+  footer form div {
+    width: 10rem; }
 
 @media (max-width: 375px) {
   .grilla13 img {
@@ -208,6 +227,8 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    footer img {
+      width: 3rem; }
     footer .redes {
       display: flex;
       align-items: center; }
